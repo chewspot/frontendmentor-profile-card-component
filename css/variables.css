@@ -1,0 +1,15 @@
+:root {
+  --teal: hsl(185, 75%, 39%);
+  --gray-900: hsl(229, 23%, 23%);
+  --gray-700: hsl(227, 10%, 46%);
+  --gray-500: hsl(0, 0%, 59%);
+  --gray-50: #e5e5e5;
+  --white: #ffffff;
+
+  --rounded: 13px;
+  --rounded-full: 100%;
+
+  --text-base: 18px;
+  --text-sm: 14px;
+  --text-xs: 10px;
+}

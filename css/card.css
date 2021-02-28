@@ -1,0 +1,92 @@
+
+.card {
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 25px;
+  margin-right: 25px;
+  min-width: 350px;
+
+  background-color: var(--white);
+  overflow: hidden;
+  border-radius: var(--rounded);
+
+  box-shadow: 0 10px 40px -20px rgba(0, 0, 0, 0.4)
+}
+
+.card__banner {
+  object-fit: cover;
+}
+
+.card__photo {
+  --outline-width: 6px;
+  --photo-size: 96px;
+
+  display: block;
+  box-sizing: content-box;
+  
+  width: var(--photo-size);
+  height: var(--photo-size);
+
+  margin-top: calc(-1 * (var(--photo-size) + var(--outline-width)) / 2);
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--white);
+  border-radius: var(--rounded-full);
+  border-width: var(--outline-width);
+  border-style: solid;
+  border-color: var(--white);
+}
+
+.card__body {
+  margin: 20px auto;
+}
+.card__nameage {
+  display: flex;
+  align-self: center;
+}
+
+.card__name{
+  color: var(--gray--900);
+  font-weight: bold;
+}
+
+.card__age {
+  margin-left: 0.5rem;
+  color: var(--gray-700);
+}
+
+.card__location {
+  margin-top: 0.65rem;
+  text-align: center;
+  color: var(--gray-700);
+  font-size: var(--text-sm);
+}
+
+.card__footer {
+
+  display: flex;
+  justify-content: space-evenly;
+
+  border-top: 1px solid var(--gray-50);
+  padding: 20px;
+
+}
+
+.card__stat {
+  text-align: center;
+}
+
+.card__stat > header {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.card__stat > footer {
+  font-size: var(--text-xs);
+  color: var(--gray-700);
+  letter-spacing: 0.05em;
+}

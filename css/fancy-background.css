@@ -1,0 +1,10 @@
+.fancy-background {
+  position: absolute; background: var(--teal); overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  
+  background-position-x: calc(50vw - 978px), 50vw;
+  background-position-y: calc(-928px/2), calc(100vh - 978px/2);
+}
