@@ -6,5 +6,5 @@
   background-repeat: no-repeat;
   
   background-position-x: calc(50vw - 978px), 50vw;
-  background-position-y: calc(-928px/2), calc(100vh - 978px/2);
+  background-position-y: calc(60vh - 978px), 45vh;
 }
