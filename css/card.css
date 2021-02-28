@@ -76,16 +76,16 @@
 
 }
 
-.card__stat {
+.stat {
   text-align: center;
 }
 
-.card__stat > header {
+.stat__label {
   font-weight: bold;
   line-height: 2;
 }
 
-.card__stat > footer {
+.stat__value {
   font-size: var(--text-xs);
   color: var(--gray-700);
   letter-spacing: 0.05em;
