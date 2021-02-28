@@ -1,4 +1,8 @@
 .card {
+  --card-spacing: 20px;
+  --card-outline-width: 6px;
+  --card-photo-size: 96px;
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,50 +17,56 @@
   box-shadow: 0 50px 80px -30px rgba(0, 0, 0, 0.4);
 }
 
+@media (min-width: 640px) {
+  .card {
+    max-width: 350px;
+  }
+}
+
 .card__banner {
   object-fit: cover;
 }
 
 .card__photo {
-  --outline-width: 6px;
-  --photo-size: 96px;
-
   display: block;
   box-sizing: content-box;
 
-  width: var(--photo-size);
-  height: var(--photo-size);
+  width: var(--card-photo-size);
+  height: var(--card-photo-size);
 
-  margin-top: calc(-1 * (var(--photo-size) + var(--outline-width)) / 2);
+  margin-top: calc(
+    -1 * (var(--card-photo-size) + var(--card-outline-width)) / 2
+  );
   margin-left: auto;
   margin-right: auto;
 
   background-color: var(--white);
   border-radius: var(--rounded-full);
-  border-width: var(--outline-width);
+  border-width: var(--card-outline-width);
   border-style: solid;
   border-color: var(--white);
 }
 
 .card__body {
-  margin: 20px auto;
+  margin: var(--card-spacing) auto;
 }
-.card__nameage {
+
+.userdetail {
   display: flex;
   align-self: center;
 }
 
-.card__name {
+.userdetail__name {
   color: var(--gray--900);
   font-weight: bold;
 }
 
-.card__age {
+.userdetail__age {
   margin-left: 0.5rem;
   color: var(--gray-700);
 }
 
-.card__location {
+.userdetail__location {
   margin-top: 0.65rem;
   text-align: center;
   color: var(--gray-700);
@@ -69,13 +79,7 @@
   justify-content: space-around;
 
   border-top: 1px solid var(--gray-50);
-  padding: 20px;
-}
-
-@media (min-width: 640px) {
-  .card {
-    max-width: 350px;
-  }
+  padding: var(--card-spacing);
 }
 
 .stat {
@@ -90,5 +94,21 @@
 .stat__value {
   font-size: var(--text-xs);
   color: var(--gray-700);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+.attribution a {
+  color: white;
 }

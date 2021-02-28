@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/fancy-background.css">
-  <link rel="stylesheet" href="css/card.css">
-  <link rel="stylesheet" href="css/attribution.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
-<body class="flex h-screen w-screen justify-center items-center">
+
+<body>
 
   <!-- background -->
   <div class="fancy-background">
@@ -23,18 +23,21 @@
   <div class="card">
     <img class="card__banner" src="images/bg-pattern-card.svg" alt="card banner image" />
 
+    <!-- photo -->
     <img class="card__photo" src="images/image-victor.jpg" alt="Profile image" />
   
+    <!-- details -->
     <div class="card__body">
-      <h3 class="card__nameage">
-        <span class="card__name">Victor Crest</span>
-        <span class="card__age">26</span>
+      <h3 class="userdetail">
+        <span class="userdetail__name">Victor Crest</span>
+        <span class="userdetail__age">26</span>
       </h3>
-      <h4 class="card__location">
+      <h4 class="userdetail__location">
         London
       </h4>
     </div>
 
+    <!-- stats -->
     <div class="card__footer">
       <div class="stat">
         <div class="stat__label">80K</div>
