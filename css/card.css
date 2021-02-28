@@ -1,19 +1,16 @@
-
 .card {
-  
   position: relative;
   display: flex;
   flex-direction: column;
 
   margin-left: 25px;
   margin-right: 25px;
-  min-width: 350px;
 
   background-color: var(--white);
   overflow: hidden;
   border-radius: var(--rounded);
 
-  box-shadow: 0 10px 40px -20px rgba(0, 0, 0, 0.4)
+  box-shadow: 0 50px 80px -30px rgba(0, 0, 0, 0.4);
 }
 
 .card__banner {
@@ -26,7 +23,7 @@
 
   display: block;
   box-sizing: content-box;
-  
+
   width: var(--photo-size);
   height: var(--photo-size);
 
@@ -49,7 +46,7 @@
   align-self: center;
 }
 
-.card__name{
+.card__name {
   color: var(--gray--900);
   font-weight: bold;
 }
@@ -67,13 +64,18 @@
 }
 
 .card__footer {
-
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 
   border-top: 1px solid var(--gray-50);
   padding: 20px;
+}
 
+@media (min-width: 640px) {
+  .card {
+    max-width: 350px;
+  }
 }
 
 .stat {
